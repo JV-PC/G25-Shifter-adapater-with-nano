@@ -10,8 +10,8 @@ I will describe each part of the process and the requirements to it, on my persp
 The requirements are actually pretty simples:
 
 + A G27 shifter (of course)
-+ + A DB9 male connector
-  + An Arduino Nano board (which is the focus of this project)
++ A DB9 male connector
++ An Arduino Nano board (which is the focus of this project)
  
 Regarding the arduino board, you can choose most of them, it would be a lot easier if you choose one with HID capabilities (there are other repositories explaining in further detail how to make those work), which is not our case.
 
