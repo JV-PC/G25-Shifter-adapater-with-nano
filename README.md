@@ -18,8 +18,8 @@ Regarding the arduino board, you can choose most of them, it would be a lot easi
 ## Wiring diagram
 
 So, the first step is to connect the db9 connector to the arduino board.
-For the G27 shifter I used the following wiring diagram: 
-(image of wiring diagram)
+For the G27 shifter I used the following wiring diagram:
+![wiring diagram](https://github.com/JV-PC/G27-Shifter-adapater-with-nano/blob/main/images/imagem_2023-11-09_223340692.png)
 
 I had some problems on this step, but I'm not entirely sure that this is a arduino nano problem or if it is just my board that is faulty, but I will documment this problem, so that if happens with you, you can try to fix it!
 
@@ -33,13 +33,14 @@ So, my arduino board wasn't really being able to read the A3 pin correctly, it w
 
 So, I did an direct connection with a wire on the analog port I would use, to the respective pin on the chip. (I found out which one measuring the voltage with the voltmeter on each pin on the chip).
 Just to register, I thoght the chip to the A3 pin, was this one:
-(imagem da porta circulada)
+![A3 chip pin](https://github.com/JV-PC/G27-Shifter-adapater-with-nano/blob/main/images/imagem_2023-11-09_223427777.png)
+
 
 It turns out that it worked, but for some reason, the arduino was getting the values from the two analog info pins from the db9 on the same analog pin, so I did another direct connection with a wire, but this time, I used the IC pin 17
-(imagem do chip com a numeração la)
+![ATMEGA328P PINOUT](https://github.com/JV-PC/G27-Shifter-adapater-with-nano/blob/main/images/imagem_2023-11-10_001152583.png)
 
 So the direct connection looks like somethin like this:
-(imagem da conexão direta)
+![Direct wiring](https://github.com/JV-PC/G27-Shifter-adapater-with-nano/blob/main/images/imagem_2023-11-09_223726834.png)
 
 That solved the issue with the faulty reading for my board.
 
