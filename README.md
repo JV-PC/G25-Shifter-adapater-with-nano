@@ -25,6 +25,9 @@ I had some problems on this step, but I'm not entirely sure that this is a ardui
 
 ### Wiring and Analog reading problem
 
+You can actually read about in more detail here: https://forum.arduino.cc/t/problems-with-analog-pin-on-nano/1184291/38
+But I will try to speak a little about it here.
+
 So, my arduino board wasn't really being able to read the A3 pin correctly, it was always returning the maximum value possible, so I started measuring everything with my voltmeter, leading me to discover that my analog port was not connected to this chip on the Nano:
 (chip image)
 
