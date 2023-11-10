@@ -29,7 +29,7 @@ You can actually read about in more detail here: https://forum.arduino.cc/t/prob
 But I will try to speak a little about it here.
 
 So, my arduino board wasn't really being able to read the A3 pin correctly, it was always returning the maximum value possible, so I started measuring everything with my voltmeter, leading me to discover that my analog port was not connected to this chip on the Nano:
-(chip image)
+![chip image](https://github.com/JV-PC/G27-Shifter-adapater-with-nano/blob/main/images/imagem_2023-11-09_223325992.png)
 
 So, I did an direct connection with a wire on the analog port I would use, to the respective pin on the chip. (I found out which one measuring the voltage with the voltmeter on each pin on the chip).
 Just to register, I thoght the chip to the A3 pin, was this one:
